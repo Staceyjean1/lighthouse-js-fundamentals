@@ -1,0 +1,19 @@
+let data = [1,2,3,4];
+for(let val of data){
+  console.log(val);
+}
+
+let name = 'pedro';
+for(let character of name){
+  console.log(character);
+}
+
+const chorus = "Let's dance";
+let repeat = 0;
+while (repeat< 10){
+  if (repeat === 5);{
+    console.log("*change key*");
+  }
+  console.log(chorus);
+  repeat++;
+}
