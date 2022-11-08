@@ -1,0 +1,22 @@
+const moves = ['north', 'north', 'west', 'west', 'north', 'east', 'north']
+
+function finalPosition(moves) {
+  var lat = 0
+  var long = 0
+  for (var i = 0; i < moves.length; i++) {
+    if (moves[i] == 'north') {
+      long++
+    }
+    else if (moves[i] == 'south') {
+      long--
+    }
+    else if (moves[i] == 'east') {
+      lat++
+    }
+    else if (moves[i] == 'west') {
+      lat--
+    }
+  }
+  return [lat, long]
+}
+console.log(finalPosition(moves));
